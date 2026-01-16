@@ -18,7 +18,8 @@ Why This Matters Most static websites require developer intervention for every c
 
 Create upcoming events with date, time, venue, and descriptions Upload event images and posters Mark events as ongoing or move to past events Edit or delete existing events Generate registration links automatically
 
-![Uploading WhatsApp Image 2026-01-15 at 18.49.55.jpeg…]()
+![WhatsApp Image 2026-01-15 at 18 49 55](https://github.com/user-attachments/assets/ad82bde1-19fe-4f5a-b24e-105e40ce5a1d)
+
 
 Project Showcase
 
@@ -88,68 +89,68 @@ CSS Custom Properties for theming CSS Grid for layouts Flexbox for components CS
 
 GitHub Repository Structure
 
-robotics-club-nitp/
-│
-├── .github/
-│   └── workflows/         
-│
-├── css/
-│   ├── styles.css               
-│   ├── about.css
-│   ├── achievements.css
-│   ├── admin.css
-│   ├── contact.css
-│   ├── events.css
-│   ├── footer.css
-│   ├── login.css
-│   ├── news.css
-│   ├── projects.css
-│   └── team.css
-│
-├── js/
-│   ├── common.js
-│   ├── index.js
-│   ├── about.js
-│   ├── achievements.js
-│   ├── admin.js
-│   ├── contact.js
-│   ├── events.js
-│   ├── login.js
-│   ├── news.js
-│   ├── projects.js
-│   └── team.js
-│
-├── images/
-│   ├── events/                 
-│   │   ├── Abhiyuttan.jpg
-│   │   ├── Arduino_Jam.webp
-│   │   ├── Chakravyuh.png
-│   │   ├── Codejuring.jpg
-│   │   ├── Digital_Detective.jpg
-│   │   ├── Freshers_Orientation.jpg
-│   │   ├── Hack_O_Heist.png
-│   │   ├── Laser_Bot_Race.jpg
-│   │   ├── Machine_Mayhem.jpg
-│   │   ├── RoboWar.jpg
-│   │   ├── Soccer_Bot_Challenge.jpg
-│   │   └── The_Next_Hokage.jpg
-│   │
-│   └── logo.png                 # club logo
-│
-├── index.html
-├── about.html
-├── achievements.html
-├── admin.html
-├── contact.html
-├── events.html
-├── login.html
-├── news.html
-├── projects.html
-├── team.html
-│
-├
-├── README.md
-└── LICENSE (optional)
+    robotics-club-nitp/
+    │
+    ├── .github/
+    │   └── workflows/         
+    │
+    ├── css/
+    │   ├── styles.css               
+    │   ├── about.css
+    │   ├── achievements.css
+    │   ├── admin.css
+    │   ├── contact.css
+    │   ├── events.css
+    │   ├── footer.css
+    │   ├── login.css
+    │   ├── news.css
+    │   ├── projects.css
+    │   └── team.css
+    │
+    ├── js/
+    │   ├── common.js
+    │   ├── index.js
+    │   ├── about.js
+    │   ├── achievements.js
+    │   ├── admin.js
+    │   ├── contact.js
+    │   ├── events.js
+    │   ├── login.js
+    │   ├── news.js
+    │   ├── projects.js
+    │   └── team.js
+    │
+    ├── images/
+    │   ├── events/                 
+    │   │   ├── Abhiyuttan.jpg
+    │   │   ├── Arduino_Jam.webp
+    │   │   ├── Chakravyuh.png
+    │   │   ├── Codejuring.jpg
+    │   │   ├── Digital_Detective.jpg
+    │   │   ├── Freshers_Orientation.jpg
+    │   │   ├── Hack_O_Heist.png
+    │   │   ├── Laser_Bot_Race.jpg
+    │   │   ├── Machine_Mayhem.jpg
+    │   │   ├── RoboWar.jpg
+    │   │   ├── Soccer_Bot_Challenge.jpg
+    │   │   └── The_Next_Hokage.jpg
+    │   │
+    │   └── logo.png                 # club logo
+    │
+    ├── index.html
+    ├── about.html
+    ├── achievements.html
+    ├── admin.html
+    ├── contact.html
+    ├── events.html
+    ├── login.html
+    ├── news.html
+    ├── projects.html
+    ├── team.html
+    │
+    ├
+    ├── README.md
+    └── LICENSE (optional)
 
 🧭 Future Enhancements
 
