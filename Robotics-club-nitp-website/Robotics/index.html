@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotics Club NIT Patna | Code for Future</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons (Phosphor Icons) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+    <!-- Dynamic Canvas Background -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <h1>Code For<br>Future Robotics</h1>
+            <p id="typing-text" class="typing-cursor">Join the Robotics Club of NIT Patna. We build, code, and innovate
+                the machines of tomorrow.</p>
+            <div class="cta-group">
+                <a href="contact.html" class="btn btn-primary">Join Us</a>
+                <a href="projects.html" class="btn btn-glass">Explore Projects</a>
+            </div>
+        </header>
+
+        <!-- Highlights Section -->
+        <section id="about">
+            <h2 class="section-title">Club Highlights</h2>
+            <div class="highlights-grid">
+                <!-- Card 1 -->
+
+                <a href="events.html" class="card glass-panel">
+                    <i class="ph ph-robot card-icon"></i>
+                    <h3>Workshops</h3>
+                    <p>Hands-on training sessions on Arduino, IoT, and AI-driven robotics. Learn from the seniors who've
+                        won nationals.</p>
+                    <span class="card-link">See Schedule <i class="ph ph-arrow-right"></i></span>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="projects.html" class="card glass-panel">
+                    <i class="ph ph-circuitry card-icon"></i>
+                    <h3>Projects</h3>
+                    <p>From autonomous drones to bipedal walkers. We fund and support student-led research projects.</p>
+                    <span class="card-link">View Projects <i class="ph ph-arrow-right"></i></span>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="achievements.html" class="card glass-panel">
+                    <i class="ph ph-trophy card-icon"></i>
+                    <h3>Competitions</h3>
+                    <p>Regular hackathons and robowars. Compete with the best minds in India and secure glory for NIT
+                        Patna.</p>
+                    <span class="card-link">Our Wins <i class="ph ph-arrow-right"></i></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Upcoming & Stats -->
+        <div class="split-section">
+            <!-- Upcoming Event -->
+            <section id="events" class="event-card glass-panel">
+                <div class="date-badge">
+                    <span>15</span>
+                    JAN
+                </div>
+                <div class="event-info">
+                    <h3>RoboWar Qualifier 2026</h3>
+                    <p style="color: var(--text-muted); margin: 0.5rem 0;">SAC Building, NIT Patna</p>
+                    <p>The ultimate battle of bots. Register your team before Jan 10th.</p>
+                </div>
+                <a href="events.html" class="btn btn-glass"
+                    style="border-radius: 12px; padding: 0.8rem 1.5rem;">Register</a>
+            </section>
+
+            <!-- Quick Stat -->
+            <a href="achievements.html" class="glass-panel"
+                style="padding: 2rem; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; text-decoration: none; color: inherit;">
+                <h3 style="font-size: 3rem; color: var(--accent-cyan);">15+</h3>
+                <p>National Awards Won</p>
+                <div
+                    style="height: 4px; width: 50px; background: var(--accent-purple); margin-top: 1rem; border-radius: 2px;">
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: robotics@nitp.ac.in</p>
+                <p>Phone: +91-612-237-1715</p>
+            </div>
+            <div class="footer-section">
+                <h3>Location</h3>
+                <p>National Institute of Technology Patna</p>
+                <p>Patna Campus, Ashok Rajpath, Patna</p>
+                <p>Bihar, India - 800005</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/robonitp/" class="social-link"><i
+                            class="ph ph-facebook-logo"></i></a>
+                    <a href="https://www.instagram.com/robotics_club_nitp/" class="social-link"><i
+                            class="ph ph-instagram-logo"></i></a>
+                    <a href="https://www.linkedin.com/company/robotics-club-nit-patna/?originalSubdomain=in"
+                        class="social-link"><i class="ph ph-linkedin-logo"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <img src="images/logo.png" alt="Robotics Club Logo" class="footer-logo">
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 NIT Patna. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Navigation Dock (Fixed Bottom) -->
+    <div class="dock-container">
+        <nav class="dock">
+            <a href="index.html" class="dock-item active">
+                <i class="ph ph-house"></i>
+                <span class="dock-tooltip">Home</span>
+            </a>
+            <a href="about.html" class="dock-item">
+                <i class="ph ph-info"></i>
+                <span class="dock-tooltip">About</span>
+            </a>
+            <a href="projects.html" class="dock-item">
+                <i class="ph ph-code"></i>
+                <span class="dock-tooltip">Projects</span>
+            </a>
+            <a href="events.html" class="dock-item">
+                <i class="ph ph-calendar-check"></i>
+                <span class="dock-tooltip">Events</span>
+            </a>
+            <a href="team.html" class="dock-item">
+                <i class="ph ph-users"></i>
+                <span class="dock-tooltip">Team</span>
+            </a>
+            <a href="news.html" class="dock-item">
+                <i class="ph ph-newspaper"></i>
+                <span class="dock-tooltip">News</span>
+            </a>
+            <a href="achievements.html" class="dock-item">
+                <i class="ph ph-medal"></i>
+                <span class="dock-tooltip">Wins</span>
+            </a>
+            <a href="contact.html" class="dock-item">
+                <i class="ph ph-envelope"></i>
+                <span class="dock-tooltip">Contact</span>
+            </a>
+            <a href="login.html" class="dock-item">
+                <i class="ph ph-lock-key"></i>
+                <span class="dock-tooltip">Admin</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

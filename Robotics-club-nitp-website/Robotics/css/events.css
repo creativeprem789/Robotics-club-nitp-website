@@ -1,0 +1,66 @@
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.event-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Specific selector to override styles.css */
+.events-grid .card {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: auto !important;
+    /* Allow growing */
+    min-height: 600px;
+    /* Increased from 520px */
+    justify-content: space-between;
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.event-date {
+    color: var(--accent-cyan);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-type {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+    width: fit-content;
+}
+
+/* Specific spacing overrides for Events Page */
+.hero {
+    height: 60vh;
+    min-height: 400px;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
