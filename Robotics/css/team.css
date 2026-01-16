@@ -1,0 +1,167 @@
+/* Specific override for the team page hero section */
+.team-hero {
+    height: auto !important;
+    min-height: 250px;
+    padding-top: 100px;
+    padding-bottom: 2rem;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.team-hero h1 {
+    margin-bottom: 0.5rem;
+}
+
+.team-hero p {
+    margin-bottom: 1rem;
+}
+
+/* Reduced spacing for the first section title */
+.team-hero+.section-title {
+    margin-top: 2rem !important;
+}
+
+/* --- NEON HORIZON CARD GRID --- */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    /* Slightly larger gap for glow effects */
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem;
+    /* Padding to prevent glow clipping */
+}
+
+/* Base Card Style */
+.member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+    position: relative;
+    background: rgba(15, 23, 42, 0.6);
+    /* Darker base */
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy transition */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Neon Gradient Border Effect via Pseudo-element */
+.member-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent-cyan), var(--accent-purple));
+    opacity: 0.5;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effects */
+.member-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: rgba(6, 182, 212, 0.5);
+    /* Cyan border */
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 20px rgba(6, 182, 212, 0.2),
+        /* Cyan glow */
+        inset 0 0 20px rgba(6, 182, 212, 0.05);
+    /* Inner glow */
+}
+
+.member-card:hover::before {
+    opacity: 1;
+    box-shadow: 0 0 15px var(--accent-cyan);
+}
+
+/* Avatar Styling */
+.member-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--accent-cyan);
+    margin-bottom: 1.5rem;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.member-card:hover .member-avatar {
+    transform: scale(1.1);
+    border-color: var(--accent-cyan);
+    color: #fff;
+    background: var(--accent-cyan);
+    box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+}
+
+/* Typography */
+.member-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
+.member-card h4 {
+    /* For Coordinators */
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.member-role {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-purple);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    background: rgba(139, 92, 246, 0.1);
+    /* Subtle purple bg for role */
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+}
+
+/* Social Icons */
+.member-socials {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+    /* Push to bottom if content varies */
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.member-card:hover .member-socials {
+    opacity: 1;
+}
+
+.member-socials a {
+    color: var(--text-muted);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.member-socials a:hover {
+    color: var(--accent-cyan);
+    transform: translateY(-3px);
+}
